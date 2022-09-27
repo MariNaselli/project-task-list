@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from 'src/app/task';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   title: string = 'Mi Lista de Tareas';
+
   constructor() { }
 
   ngOnInit(): void {
