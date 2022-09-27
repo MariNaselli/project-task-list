@@ -1,5 +1,5 @@
 //emula base de datos
-import {Task} from "./task"
+import { Task } from "./task"
 export const TASKS: Task[] = [
   {
     id: 1,
