@@ -2,7 +2,7 @@
 //permite controlar nos da informacion sobre el modelo de datos de lo que estamos construyendo
 // el id podria no venir/se crea una tarea hasta que no se guarde no lo tiene
 //el id es opcional en este caso - ?
-export interface Task {
+export interface TaskInterface {
   id?: number;
   text: string;
   day: string;

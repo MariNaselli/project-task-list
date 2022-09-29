@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from 'src/app/task';
+import { TaskInterface } from 'src/app/task';
 
 @Component({
   selector: 'app-header',

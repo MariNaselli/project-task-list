@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Darle besos a mi amorcito",
+      "day": "Todos los días a toda hora",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Darle besos a mi amorcito",
+      "day": "Todos los días a toda hora",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Darle besos a mi amorcito",
+      "day": "Todos los días a toda hora",
+      "reminder": true
+    }
+  ]
+}

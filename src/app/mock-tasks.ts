@@ -1,6 +1,6 @@
 //emula base de datos
-import { Task } from "./task"
-export const TASKS: Task[] = [
+import { TaskInterface } from "./task"
+export const TASKS_MOCKS: TaskInterface[] = [
   {
     id: 1,
     text: "Darle besos a mi amorcito",
