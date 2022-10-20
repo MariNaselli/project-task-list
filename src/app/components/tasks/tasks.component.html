@@ -1,5 +1,8 @@
-<app-tasks-item *ngFor="let task of miListaDeTareas"
-  [task] = "task"
-  (OnDeleteTask)="deleteTask(task)"
+<div class="list-group">
+  <app-tasks-item
+    *ngFor="let task of miListaDeTareas"
+    [task]="task"
+    (OnDeleteTask)="deleteTask(task)"
   >
-</app-tasks-item>
+  </app-tasks-item>
+</div>

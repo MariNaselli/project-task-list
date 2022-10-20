@@ -1,11 +1,18 @@
- <header>
-  <h1>{{title}}</h1>
+ <header class="pb-3 mb-4 border-bottom">
+
+  <div class="d-flex align-items-center text-dark text-decoration-none">
+
+    <span class="fs-4">
+      {{title}}
+    </span>
+  </div>
   <app-button
   color="violet"
   text="Add Task"
   (btnClick)="toggleAddTask()"
   >
   </app-button>
+  <app-modal-task></app-modal-task>
  </header>
 
 

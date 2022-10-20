@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "text": "Darle muchos besos a mi amorcito",
+      "text": "Darle besos a mi amorcito",
       "day": "Todos los días a toda hora",
       "reminder": true
     },
@@ -19,5 +19,4 @@
       "reminder": true
     }
   ]
-
 }
