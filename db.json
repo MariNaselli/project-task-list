@@ -13,10 +13,28 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "Darle besos a mi amorcito",
-      "day": "Todos los días a toda hora",
-      "reminder": true
+      "text": "Hola mi amorcito",
+      "day": "2022-10-21 09:33",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "Faltaría Editar una tarea y el check de recordarme",
+      "day": "2022-10-21 09:33",
+      "reminder": true,
+      "id": 7
+    },
+    {
+      "text": "Cuando pongo nueva tarea me abre la última que hice",
+      "day": "2022-10-21 09:33",
+      "reminder": true,
+      "id": 8
+    },
+    {
+      "text": "Cuando pongo guardar se debería cerrar el modal",
+      "day": "2022-10-21 09:33",
+      "reminder": false,
+      "id": 9
     }
   ]
 }

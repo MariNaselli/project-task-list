@@ -1,19 +1,15 @@
- <header class="pb-3 mb-4 border-bottom">
-
+<header class="pb-3 mb-4 border-bottom">
   <div class="d-flex align-items-center text-dark text-decoration-none">
-
     <span class="fs-4">
-      {{title}}
+      {{ title }}
     </span>
   </div>
-  <app-button
-  color="violet"
-  text="Add Task"
-  (btnClick)="toggleAddTask()"
+  <button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#modal_task"
   >
-  </app-button>
-  <app-modal-task></app-modal-task>
- </header>
-
-
-
+    Nueva
+  </button>
+</header>

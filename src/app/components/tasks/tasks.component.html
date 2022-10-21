@@ -1,3 +1,4 @@
+<app-modal-task (OnSaveTask)="addTask($event)"></app-modal-task>
 <div class="list-group">
   <app-tasks-item
     *ngFor="let task of miListaDeTareas"
@@ -5,4 +6,8 @@
     (OnDeleteTask)="deleteTask(task)"
   >
   </app-tasks-item>
+</div>
+
+<div class="alert alert-danger" role="alert" *ngIf="showError">
+  No se pudieron cargar las tareas: Puede que el servidor de base de datos no esté disponible
 </div>
