@@ -1,14 +1,22 @@
-
 <div class="list-group-item list-group-item-action">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">{{ task.text }}</h5>
-    <button
-      type="button"
-      class="btn btn-danger btn-sm"
-      (click)="onDelete(task)"
-    >
-      <fa-icon [icon]="faTimes"></fa-icon>
-    </button>
+    <div>
+      <button
+        type="button"
+        class="btn btn-secondary btn-sm"
+        (click)="onEdit(task)"
+      >
+        <fa-icon [icon]="faIconEditar"></fa-icon>
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger btn-sm ms-1"
+        (click)="onDelete(task)"
+      >
+        <fa-icon [icon]="faIconEliminar"></fa-icon>
+      </button>
+    </div>
   </div>
   <p class="mb-1">{{ task.day }}</p>
 </div>

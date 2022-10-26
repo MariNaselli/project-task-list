@@ -1,7 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TaskInterface } from 'src/app/task';
 import { TASKS_MOCKS } from 'src/app/mock-tasks';
-import { faSwatchbook, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSwatchbook,
+  faTrash,
+  faPenToSquare,
+} from '@fortawesome/free-solid-svg-icons';
 import swal from 'sweetalert2';
 
 @Component({
@@ -12,13 +16,33 @@ import swal from 'sweetalert2';
 export class TasksItemComponent implements OnInit {
   @Input() task: TaskInterface = TASKS_MOCKS[0];
   @Output() OnDeleteTask: EventEmitter<TaskInterface> = new EventEmitter();
-  faTimes = faTimes;
+
+
+
+  faIconEliminar = faTrash;
+  faIconEditar = faPenToSquare;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   onDelete(task: TaskInterface) {
+    this.mostrarAlerta(task);
+  }
+
+  onEdit(task:TaskInterface) {
+    console.log("Editar");
+    console.log(task);
+
+    this.abrirModalConEstosDatos(task);
+
+  }
+
+  abrirModalConEstosDatos(task: TaskInterface){
+   // traer al modal this.;
+  }
+
+  mostrarAlerta(task: TaskInterface) {
     //MOSTRAMOS EL MENSAJE DE CONFIRMACIÓN
     swal
       .fire({
@@ -33,7 +57,6 @@ export class TasksItemComponent implements OnInit {
       })
       .then((swal_result) => {
         if (swal_result.isConfirmed) {
-
           //LLAMAMOS AL SERVICIO PARA ELIMINAR LA TAREA
           this.OnDeleteTask.emit(task);
 
